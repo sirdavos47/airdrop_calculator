@@ -1,33 +1,36 @@
 # Airdrop Calculator
 
-Bu proje, mevcut ve potansiyel airdrop fırsatlarını analiz ederek kullanıcıya en iyi airdrop'u öneren basit bir Bash script'i içerir.
+This project provides a simple Bash script that analyzes current and potential airdrop opportunities and recommends the best airdrop for the user.
 
-## Özellikler
-- Mevcut airdrop fırsatlarını listeler.
-- Her bir airdrop için getiri/zorluk oranı hesaplar.
-- En iyi airdrop'u önerir.
-- Airdrop verileri kolayca güncellenebilir (airdrops.csv dosyası).
+## Features
+- Lists available airdrop opportunities.
+- Calculates the reward/difficulty ratio for each airdrop.
+- Recommends the best airdrop to farm.
+- Easily update airdrop data (airdrops.csv file).
+- Menu-driven and fully configurable.
+- Saves all calculations and user actions to a history file (`history.log`).
+- Allows you to view previous results and actions.
 
-## Kullanım
+## Usage
 
-1. Script'i çalıştırmadan önce terminalde dosyanın bulunduğu klasöre gelin.
-2. Script'i çalıştırmak için:
+1. Open a terminal and navigate to the project directory.
+2. Run the script:
 
 ```bash
 bash airdrop_calculator.sh
 ```
 
-3. Script, mevcut airdrop fırsatlarını ve en iyi airdrop'u terminalde gösterecektir.
+3. Use the menu to list, add, or delete airdrops, or to view calculation history.
 
-## Airdrop Verilerini Güncelleme
+## Updating Airdrop Data
 
-Airdrop verileri `airdrops.csv` dosyasında tutulur. Dosya formatı:
+Airdrop data is stored in the `airdrops.csv` file. The format is:
 
 ```
-AirdropAdı,PotansiyelÖdülUSD,Zorluk(1-10)
+AirdropName,PotentialRewardUSD,Difficulty(1-10)
 ```
 
-Örnek:
+Example:
 ```
 Starknet,500,7
 LayerZero,300,5
@@ -35,17 +38,17 @@ ZkSync,200,4
 EigenLayer,600,8
 ```
 
-Daha fazla airdrop eklemek veya mevcutları güncellemek için bu dosyayı düzenleyebilirsiniz.
+You can add more airdrops or update existing ones using the menu or by editing this file directly.
 
-## Gereksinimler
+## Requirements
 - Bash shell
-- `bc` komutu (hesaplama için gereklidir)
+- `bc` command (required for calculations)
 
-## Katkı
-Katkıda bulunmak isterseniz, lütfen bir pull request açın veya issue oluşturun.
+## Contributing
+If you want to contribute, please open a pull request or create an issue.
 
 ---
 
-**Not:** Bu script örnek amaçlıdır. Gerçek airdrop fırsatları ve ödülleri değişiklik gösterebilir.
+**Note:** This script is for demonstration purposes. Actual airdrop opportunities and rewards may vary.
 # airdrop_calculator
 This app calculates which airdrop would be logical to farm
